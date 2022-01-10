@@ -15,5 +15,5 @@ setInterval(() => {
 		'uso': `${uso.toFixed(2)} %`
 	}
 	exports.dados = dados
-}, 1000)
+}, 500)
 
