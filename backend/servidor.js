@@ -1,11 +1,19 @@
-const http = require('http')
+const express = require('express')
+const cors = require('cors')
+
+const app = express()
+
+app.use(cors({ origin: '*' }))
+
 const host = 'http://localhost'
 const porta = 3001
 const dados = require('./usoPC')
 
-http.createServer(function(req, res) {
+app.get('/', function(req, res) {
 	let url = req.url
 	res.end(JSON.stringify(dados))
-}).listen(porta, function () {
+})
+
+app.listen(porta, function () {
 	console.log(`Servidor rodando em ${host}:${porta}`)
 })

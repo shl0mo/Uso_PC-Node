@@ -2,6 +2,16 @@
 <html>
 	<head>
 		<script>
+			let host = 'http://localhost'
+			let porta = 3001
+
+			let xhttp = new XMLHttpRequest()
+			xhttp.open('GET', host + ':' + porta, true)
+			xhttp.send()
+			xhttp.onload = function () {
+				let resposta = xhttp.response
+				console.log(resposta)
+			}
 		</script>
 	</head>
 	<body>
