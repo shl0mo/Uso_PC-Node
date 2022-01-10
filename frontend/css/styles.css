@@ -1,6 +1,5 @@
 body {
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	margin: 0;
 	padding: 0;
@@ -12,15 +11,36 @@ body {
 }
 
 .main {
+	position: absolute;
+	top: 20%;
 	color: white;
-}
-
-table {
-	border-collapse: collapse;
+	border-radius: 5px;
 }
 
 table td, table caption  {
+	border-collapse: collapse;
 	border: 1px solid rgb(41,50,65);
-	padding: 20px 30px;
 }
 
+table td, table caption {
+	padding: 30px 40px;
+}
+
+table caption {
+	background-color: rgb(224,159,62);
+	color: black;
+	font-weight: bold;
+	border-radius: 5px 5px 0 0;
+}
+
+table:last-child {
+	border-radius: 0px 0px 5px 5px;
+}
+
+#label-uso {
+	border-radius: 0px 0px 0px 5px;
+}
+
+#uso-ram {
+	border-radius: 0px 0px 5px 0px;
+}
