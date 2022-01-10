@@ -10,19 +10,8 @@ body {
 	font-family: sans-serif;
 }
 
-.main {
-	position: absolute;
-	top: 20%;
-	color: white;
-	border-radius: 5px;
-}
-
 table td, table caption  {
-	border-collapse: collapse;
 	border: 1px solid rgb(41,50,65);
-}
-
-table td, table caption {
 	padding: 30px 40px;
 }
 
@@ -35,6 +24,13 @@ table caption {
 
 table:last-child {
 	border-radius: 0px 0px 5px 5px;
+}
+
+.main {
+	position: absolute;
+	top: 20%;
+	color: white;
+	border-radius: 5px;
 }
 
 #label-uso {

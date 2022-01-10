@@ -4,6 +4,6 @@
     "express": "^4.17.2"
   },
   "scripts": {
-	  "start": "node ./src/servidor.js"
+	  "start": "node ./backend/src/servidor.js"
   }
 }

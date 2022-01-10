@@ -17,7 +17,7 @@
 			document.getElementById('ram-livre').innerText = ram_livre
 			document.getElementById('uso-ram').innerText = uso
 			}
-		}, 500)
+	}, 500)
 
 		intervalo
 })();
