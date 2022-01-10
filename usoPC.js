@@ -14,7 +14,6 @@ setInterval(() => {
 		'RAM Livre': `${ram_livre} MB`,
 		'Uso': `${uso.toFixed(2)} %`
 	}
-
-	console.table(dados)
+	exports.dados = dados
 }, 1000)
 
