@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script>
-			let host = 'http://localhost'
-			let porta = 3001
-
-			let xhttp = new XMLHttpRequest()
-			xhttp.open('GET', host + ':' + porta, true)
-			xhttp.send()
-			xhttp.onload = function () {
-				let resposta = xhttp.response
-				console.log(resposta)
-			}
-		</script>
+		<link rel="stylesheet" href="./css/styles.css">
+		<script type="text/javascript" src="./js/script.js"></script>
 	</head>
 	<body>
 		<div class="main">
@@ -20,19 +10,19 @@
 				<caption>Informações do PC</caption>
 				<tr>
 					<td>Sistema Operacional</td>
-					<td></td>
+					<td id="SO"></td>
 				</tr>
 				<tr>
 					<td>RAM total</td>
-					<td></td>
+					<td id="ram-total"></td>
 				</tr>
 				<tr>
 					<td>RAM livre</td>
-					<td></td>
+					<td id="ram-livre"></td>
 				</tr>
 				<tr>
 					<td>Uso da RAM</td>
-					<td></td>
+					<td id="uso-ram"></td>
 				</tr>
 			</table>
 		</div>

@@ -9,10 +9,10 @@ setInterval(() => {
 
 	const dados = {
 		'SO': platform(),
-		'Arquitetura': arch(),
-		'RAM Total': `${ram_total} MB`,
-		'RAM Livre': `${ram_livre} MB`,
-		'Uso': `${uso.toFixed(2)} %`
+		'arquitetura': arch(),
+		'ram_total': `${ram_total} MB`,
+		'ram_livre': `${ram_livre} MB`,
+		'uso': `${uso.toFixed(2)} %`
 	}
 	exports.dados = dados
 }, 1000)

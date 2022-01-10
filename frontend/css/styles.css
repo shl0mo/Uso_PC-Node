@@ -1,0 +1,26 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(10,9,8);
+	font-family: sans-serif;
+}
+
+.main {
+	color: white;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table td, table caption  {
+	border: 1px solid rgb(41,50,65);
+	padding: 20px 30px;
+}
+
