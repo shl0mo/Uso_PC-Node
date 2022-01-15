@@ -8,11 +8,13 @@
 		xhttp.send()
 		xhttp.onload = function () {
 			let resposta = JSON.parse(xhttp.response)
+			let arquitetura = resposta.dados.arquitetura
 			let SO = resposta.dados.SO
 			let ram_total = resposta.dados.ram_total
 			let ram_livre = resposta.dados.ram_livre
 			let uso = resposta.dados.uso
 			document.getElementById('SO').innerText = SO
+			document.getElementById('arq').innerText = arquitetura 
 			document.getElementById('ram-total').innerText = ram_total			
 			document.getElementById('ram-livre').innerText = ram_livre
 			document.getElementById('uso-ram').innerText = uso
